@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-2.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-1.png" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <header class="header-wrapper">
+      <h1 class="page-title">Weather</h1>
+      <div class="search-wrapper">
+        <input
+          type="search"
+          class="search-bar"
+          placeholder="pleasr enter a city name"
+          inputmode="search"
+          class="fas fa-search"
+        />
+        <div class="search-button"></div>
+      </div>
+    </header>
+    <main class="main-wrapper">
+      <div class="forecast-container">
+        <h2 class="forecast-title">Please enter a city name</h2>
+        <div class="cards-wrapper hidden">
+          <div class="card-wrapper">
+            <h3 class="date" data-key="0"></h3>
+            <div class="card today">
+              <p class="temp" data-key="0"></p>
+              <p class="description" data-key="0"></p>
+              <img src="" class="weather-icon" data-key="0" />
+              <div class="summary">
+                <p>
+                  Feels Like: <span class="feels-like hl" data-key="0"></span>
+                </p>
+                <p>Pressure: <span class="pressure hl" data-key="0"></span></p>
+                <p>Humidity: <span class="humidity hl" data-key="0"></span></p>
+                <p>
+                  Wind Speed: <span class="wind-speed hl" data-key="0"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <h3 class="date" data-key="1"></h3>
+            <div class="card today">
+              <p class="temp" data-key="1"></p>
+              <p class="description" data-key="1"></p>
+              <img src="" class="weather-icon" data-key="1" />
+              <div class="summary">
+                <p>
+                  Feels Like: <span class="feels-like hl" data-key="1"></span>
+                </p>
+                <p>Pressure: <span class="pressure hl" data-key="1"></span></p>
+                <p>Humidity: <span class="humidity hl" data-key="1"></span></p>
+                <p>
+                  Wind Speed: <span class="wind-speed hl" data-key="1"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <h3 class="date" data-key="2"></h3>
+            <div class="card today">
+              <p class="temp" data-key="2"></p>
+              <p class="description" data-key="2"></p>
+              <img src="" class="weather-icon" data-key="2" />
+              <div class="summary">
+                <p>
+                  Feels Like: <span class="feels-like hl" data-key="2"></span>
+                </p>
+                <p>Pressure: <span class="pressure hl" data-key="2"></span></p>
+                <p>Humidity: <span class="humidity hl" data-key="2"></span></p>
+                <p>
+                  Wind Speed: <span class="wind-speed hl" data-key="2"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <h3 class="date" data-key="3"></h3>
+            <div class="card today">
+              <p class="temp" data-key="3"></p>
+              <p class="description" data-key="3"></p>
+              <img src="" class="weather-icon" data-key="3" />
+              <div class="summary">
+                <p>
+                  Feels Like: <span class="feels-like hl" data-key="3"></span>
+                </p>
+                <p>Pressure: <span class="pressure hl" data-key="3"></span></p>
+                <p>Humidity: <span class="humidity hl" data-key="3"></span></p>
+                <p>
+                  Wind Speed: <span class="wind-speed hl" data-key="3"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <h3 class="date" data-key="4"></h3>
+            <div class="card today">
+              <p class="temp" data-key="4"></p>
+              <p class="description" data-key="4"></p>
+              <img src="" class="weather-icon" data-key="4" />
+              <div class="summary">
+                <p>
+                  Feels Like: <span class="feels-like hl" data-key="4"></span>
+                </p>
+                <p>Pressure: <span class="pressure hl" data-key="4"></span></p>
+                <p>Humidity: <span class="humidity hl" data-key="4"></span></p>
+                <p>
+                  Wind Speed: <span class="wind-speed hl" data-key="4"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
